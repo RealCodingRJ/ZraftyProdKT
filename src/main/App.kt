@@ -81,6 +81,7 @@ suspend fun main() {
     val input: String = readln()
 
     val isMathInput = input.contains("/Math")
+    val isColorPicked = input.startsWith("/Colors")
 
     if (input.contains("/")) {
 
@@ -183,6 +184,40 @@ suspend fun main() {
                 println("Incorrect Answer The Answer was: ${abs(addMath.div(num1, num2))}")
             }
 
+        }
+    }
+
+    if (isColorPicked) {
+
+        val colors = Random()
+        val length = colors.nextInt(0, 6)
+
+        val isRed = length == 1
+        val isBlue = length == 2
+        val isGreen = length == 3
+        val isOrange = length == 4
+        val isPurple = length == 5
+
+        if (isRed) {
+
+            println("RED")
+        }
+
+        else if (isBlue) {
+
+            println("BLUE")
+        }
+
+        else if (isGreen) {
+            println("GREEN")
+        }
+
+        else if(isOrange) {
+            println("ORANGE")
+        }
+
+        else if (isPurple) {
+            println("PURPLE")
         }
     }
 }
