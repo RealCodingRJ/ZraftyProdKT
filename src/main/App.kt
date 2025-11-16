@@ -164,9 +164,9 @@ suspend fun main() {
 
                 println("Correct Answer")
             }
-            else if (answer != addMath.sub(num1, num2)) {
+            else if (answer != addMath.mul(num1, num2)) {
 
-                println("Incorrect Answer The Answer was: ${abs(addMath.sub(num1, num2))}")
+                println("Incorrect Answer The Answer was: ${abs(addMath.mul(num1, num2))}")
             }
 
         }
@@ -220,4 +220,6 @@ suspend fun main() {
             println("PURPLE")
         }
     }
+
+
 }
